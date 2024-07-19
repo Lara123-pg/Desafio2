@@ -8,7 +8,7 @@ import { SessionWrapper } from '@/contexts/sessionWrapper'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Desafio 2',
+  title: 'Gerenciamento de notas',
   description: 'Desafio 2'
 }
 
