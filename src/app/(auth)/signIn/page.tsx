@@ -20,6 +20,7 @@ import { signIn } from 'next-auth/react'
 import {
   FormContainer,
   FormContent,
+  FormFooter,
   FormHeader,
   FormInput,
   FormInputs,
@@ -56,6 +57,12 @@ export default function Page() {
     })
 
     if (response?.ok) {
+      toast({
+        title: "Usuário logado com sucesso!",
+        description: "Seja bem-vindo!",
+        variant: 'success'
+      })
+  
       router.push('/app')
       return
     }
@@ -78,7 +85,7 @@ export default function Page() {
     <FormContainer>
       <Form {...form}>
         <FormHeader>
-          <FormTitle>Entrar</FormTitle>
+          <FormTitle>Fazer login</FormTitle>
           <FormDescription>
             Bem vindo! Por favor, insira seu e-mail e senha para continuar.
           </FormDescription>
@@ -131,6 +138,14 @@ export default function Page() {
             >
               {isLoading ? 'Verificando...' : 'Entrar'}
             </Button>
+
+
+            <FormFooter>
+              Ainda não tem uma conta?{' '}
+              <a href="/" className="text-link hover:underline">
+                Criar conta
+              </a>
+            </FormFooter>
           </FormContent>
         </form>
       </Form>
