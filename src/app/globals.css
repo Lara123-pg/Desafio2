@@ -29,6 +29,9 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --link: 220, 80%, 56%;
+    --success: 120, 60%, 70%;
+    --success-foreground: 210 20% 98%;
   }
 
   .dark {
