@@ -12,14 +12,14 @@ export function FormPage({ className, children }: FormPageGenericProps) {
 
 export function FormContainer({ className, children }: FormPageGenericProps) {
   return (
-    <div className={cn('mx-auto max-w-md space-y-4', className)}>
+    <div className={cn('mx-auto max-w-md space-y-10 p-6', className)}>
       {children}
     </div>
   )
 }
 
 export function FormHeader({ className, children }: FormPageGenericProps) {
-  return <div className={cn('text-center', className)}>{children}</div>
+  return <div className={cn('text-center space-y-1', className)}>{children}</div>
 }
 
 export function FormTitle({ className, children }: FormPageGenericProps) {
@@ -35,7 +35,7 @@ export function FormDescription({ className, children }: FormPageGenericProps) {
 }
 
 export function FormContent({ className, children }: FormPageGenericProps) {
-  return <div className={cn('space-y-4', className)}>{children}</div>
+  return <div className={cn('border border-border p-7 space-y-4', className)}>{children}</div>
 }
 
 export function FormInputs({ className, children }: FormPageGenericProps) {
@@ -46,4 +46,8 @@ export function FormInputs({ className, children }: FormPageGenericProps) {
 
 export function FormInput({ className, children }: FormPageGenericProps) {
   return <div className={cn('', className)}>{children}</div>
+}
+
+export function FormFooter({ className, children }: FormPageGenericProps) {
+  return <div className={cn('mt-4 text-center text-sm', className)}>{children}</div>
 }
