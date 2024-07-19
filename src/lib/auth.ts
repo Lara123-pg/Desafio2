@@ -38,7 +38,7 @@ export const authOptions: NextAuthOptions = {
             email: data.email,
             password: data.password
           })
-
+          
           if (response.error) throw new Error(response.error)
 
           const { access_token } = response.data!
