@@ -10,7 +10,7 @@ export function DashboardPage({
   children
 }: DashboardPageGenericProps) {
   return (
-    <section className={cn(['h-screen overflow-hidden', className])}>
+    <section className={cn(['h-screen overflow-y-auto relative', className])}>
       {children}
     </section>
   )
@@ -59,5 +59,5 @@ export function DashboardPageMain({
   className,
   children
 }: DashboardPageGenericProps) {
-  return <main className={cn(['mt-10 px-6 py-3', className])}>{children}</main>
+  return <main className={cn(['mt-10 px-6 py-3 grid grid-cols-[repeat(auto-fill,minmax(256px,1fr))] gap-14', className])}>{children}</main>
 }
