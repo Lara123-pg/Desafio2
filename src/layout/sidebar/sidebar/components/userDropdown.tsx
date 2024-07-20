@@ -48,9 +48,9 @@ export function UserDropdown({ user }: UserDropdownProps) {
 
           <div className="flex flex-1 flex-col space-y-1 overflow-hidden text-left">
             {user.name && (
-              <p className="text-xs font-medium leading-none">{user.name}</p>
+              <p className="text-xs text-white font-medium leading-none">{user.name}</p>
             )}
-            <p className="w-full flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-nowrap text-xs text-muted-foreground">
+            <p className="w-full text-black font-medium overflow-hidden text-ellipsis whitespace-nowrap text-nowrap text-xs text-muted-foreground">
               {user.email}
             </p>
           </div>
