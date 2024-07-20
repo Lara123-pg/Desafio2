@@ -25,7 +25,7 @@ interface NavItem {
 const navItems: NavItem[] = [
   {
     href: '/app',
-    label: 'Tarefas',
+    label: 'Notas',
     icon: CheckSquareIcon
   }
 ]
@@ -45,8 +45,8 @@ export const Sidebar = ({ user }: SidebarProps) => {
 
   return (
     <DashboardSidebar className="w-64 py-0 pt-3">
-      <DashboardSidebarHeader className="font-bold">
-        Desafio 2
+      <DashboardSidebarHeader className="font-bold text-white">
+        Gerenciador de notas
       </DashboardSidebarHeader>
       <DashboardSidebarMain className="flex flex-grow flex-col">
         <DashboardSidebarNav>
