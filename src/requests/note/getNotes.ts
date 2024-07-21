@@ -4,13 +4,9 @@ import { Note } from '@/schemas/note';
 import { api } from '@/services/api'
 import { AxiosCustomError, AxiosCustomResponse } from '@/types/api'
 
-interface GetNotesResponse {
-    notes: Note[];
-}
-
-export const getNotes = async (): Promise<AxiosCustomResponse<GetNotesResponse>> => {
+export const getNotes = async (): Promise<AxiosCustomResponse<Note[]>> => {
   try {
-    const response = await api.get<GetNotesResponse>('/notes')
+    const response = await api.get<Note[]>('/notes')
 
     return { data: response.data }
   } catch (err) {
