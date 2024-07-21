@@ -16,7 +16,7 @@ import { FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { PlusIcon } from '@radix-ui/react-icons'
 import { useEffect, useState } from 'react'
-import ModalNote from './components/ModalNote'
+import ModalNote from '../components/ModalNote'
 import { getNotes } from '@/requests/note/getNotes'
 import { Note } from '@/schemas/note'
 import Link from 'next/link'
@@ -77,6 +77,9 @@ export default function Page() {
           {
             isOpenModal && (
               <ModalNote 
+                title="Criar nova nota"
+                type="create"
+                buttonText="Criar nota"
                 setIsOpenModal={setIsOpenModal}
                 setIsUpdated={setIsUpdated}
               />
