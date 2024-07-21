@@ -8,7 +8,7 @@ export type CardGenericProps<T = unknown> = {
 
 export function CardContainer({ className, children }: CardGenericProps) {
   return (
-    <div className={cn('mx-auto h-screen max-w-md space-y-10 p-6', className)}>
+    <div className={cn('mx-auto h-screen max-w-lg p-6', className)}>
       {children}
     </div>
   )
