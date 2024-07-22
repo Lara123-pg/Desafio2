@@ -42,6 +42,7 @@ export default function Page() {
     }
 
     fetchNotes();
+    setIsUpdated(false)
   }, [isUpdated]) 
 
   return (
