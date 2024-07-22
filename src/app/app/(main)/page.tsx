@@ -67,7 +67,7 @@ export default function Page() {
           ) : (
             notes.map(note => (
               <Link key={note.id} href={`/noteDetails/${note.id}`}>
-                <Card className="cursor-pointer hover:bg-accent">
+                <Card className="cursor-pointer animate-accordion-up transition-all duration-2000 ease-out hover:bg-accent hover:animate-accordion-down">
                   <CardTitle>{note.title}</CardTitle>
                 </Card>
               </Link>

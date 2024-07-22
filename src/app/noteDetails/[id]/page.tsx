@@ -26,7 +26,6 @@ export default function NoteDetails() {
 
     const [note, setNote] = useState<Note>()
     const [isOpenModal, setIsOpenModal] = useState(false)
-    const [isOpenModalDelete, setIsOpenModalDelete] = useState(false)
     const [isUpdatedNote, setIsUpdatedNote] = useState(false)
 
     useEffect(() => {

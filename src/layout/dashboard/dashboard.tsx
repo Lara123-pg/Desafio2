@@ -59,5 +59,5 @@ export function DashboardPageMain({
   className,
   children
 }: DashboardPageGenericProps) {
-  return <main className={cn(['mt-10 px-6 py-3 grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-14', className])}>{children}</main>
+  return <main className={cn(['mt-10 px-6 py-3 grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-14', className])}>{children}</main>
 }
