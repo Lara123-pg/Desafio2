@@ -65,7 +65,7 @@ export function UserDropdown({ user }: UserDropdownProps) {
             </p>
           </div>
         </DropdownMenuLabel>
-        <DropdownMenuSeparator />
+        <DropdownMenuSeparator  />
         {dropdownItems.map((item, index) => {
           if (typeof item === 'string') {
             return (

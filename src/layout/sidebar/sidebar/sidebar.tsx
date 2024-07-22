@@ -48,7 +48,7 @@ export const Sidebar = ({ user }: SidebarProps) => {
       <DashboardSidebarHeader className="font-bold text-white">
         Gerenciador de notas
       </DashboardSidebarHeader>
-      <DashboardSidebarMain className="flex flex-grow flex-col">
+      <DashboardSidebarMain className="flex flex-grow flex-col pb-6">
         <DashboardSidebarNav>
           <DashboardSidebarNavMain>
             {navItems.map((item) => (

@@ -62,7 +62,7 @@ export default function Page() {
           notes.length === 0 ? (
             <div className="flex flex-col items-center gap-1 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <FileText size={60} />
-              <p>Nenhuma nota encontrada</p>
+              <p className="text-center">Nenhuma nota encontrada</p>
             </div>
           ) : (
             notes.map(note => (

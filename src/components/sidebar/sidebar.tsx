@@ -13,7 +13,7 @@ export function DashboardSidebar({
 }: DashboardSidebarGenericProps) {
   return (
     <aside
-      className={cn('bg-ring flex flex-col border-r border-border py-3', className)}
+      className={cn('bg-ring flex flex-col border-r border-border py-3 max-sm:w-full max-sm:items-center', className)}
     >
       {children}
     </aside>
