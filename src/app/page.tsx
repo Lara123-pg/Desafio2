@@ -165,7 +165,7 @@ export default function Home() {
 
             <FormFooter>
               Já tem uma conta?{' '}
-              <a href="/signIn" className="text-link hover:underline">
+              <a href="/signIn" className="text-muted-foreground hover:underline">
                 Fazer login
               </a>
             </FormFooter>

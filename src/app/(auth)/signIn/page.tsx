@@ -142,7 +142,7 @@ export default function Page() {
 
             <FormFooter>
               Ainda não tem uma conta?{' '}
-              <a href="/" className="text-link hover:underline">
+              <a href="/" className="text-muted-foreground hover:underline">
                 Criar conta
               </a>
             </FormFooter>

@@ -20,7 +20,7 @@ export function CardTitle2({ className, children }: CardGenericProps) {
 
 export function CardDescription({ className, children }: CardGenericProps) {
   return (
-    <p className={cn('text-gray-500 dark:text-gray-400', className)}>
+    <p className={cn('text-muted-foreground dark:text-gray-400', className)}>
       {children}
     </p>
   )

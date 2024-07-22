@@ -15,6 +15,7 @@ import {
 import { FileText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { PlusIcon } from '@radix-ui/react-icons'
+import { Moon, Sun } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import ModalNote from '../components/ModalNote'
 import { getNotes } from '@/requests/note/getNotes'
@@ -43,7 +44,6 @@ export default function Page() {
     fetchNotes();
   }, [isUpdated]) 
 
-
   return (
     <DashboardPage>
       <DashboardPageHeader>
@@ -67,7 +67,7 @@ export default function Page() {
           ) : (
             notes.map(note => (
               <Link key={note.id} href={`/noteDetails/${note.id}`}>
-                <Card className="cursor-pointer hover:bg-slate-50">
+                <Card className="cursor-pointer hover:bg-accent">
                   <CardTitle>{note.title}</CardTitle>
                 </Card>
               </Link>

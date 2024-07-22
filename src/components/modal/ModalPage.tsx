@@ -16,7 +16,7 @@ export function ModalPage({ className, children }: ModalPageGenericProps) {
 
 export function ModalContainer({ className, children }: ModalPageGenericProps) {
   return (
-    <div className={cn('w-[640px] rounded-xl py-5 px-6 bg-white space-y-5', className)}>
+    <div className={cn('w-[640px] rounded-xl py-5 px-6 bg-popover space-y-5', className)}>
       {children}
     </div>
   )
@@ -32,7 +32,7 @@ export function ModalTitle({ className, children }: ModalPageGenericProps) {
 
 export function ModalDescription({ className, children }: ModalPageGenericProps) {
   return (
-    <p className={cn('text-gray-500 dark:text-gray-400', className)}>
+    <p className={cn('text-muted-foreground dark:text-gray-400', className)}>
       {children}
     </p>
   )

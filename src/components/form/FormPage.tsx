@@ -28,7 +28,7 @@ export function FormTitle({ className, children }: FormPageGenericProps) {
 
 export function FormDescription({ className, children }: FormPageGenericProps) {
   return (
-    <p className={cn('text-gray-500 dark:text-gray-400', className)}>
+    <p className={cn('text-muted-foreground dark:text-gray-400', className)}>
       {children}
     </p>
   )
